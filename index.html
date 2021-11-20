@@ -1,0 +1,173 @@
+<!-- Creating a Gym website  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Reset  */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(bg.jpg);
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 180px;
+            height: 110px;
+            filter: invert(100%);
+            /* It is use to change the background color of the image */
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+            line-height: 19px;
+            font-size: 26px;
+        }
+
+        .mid {
+            display: block;
+            width: 38%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 36px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a :active {
+            text-decoration: underline;
+            color: burlywood;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 8px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(40, 40, 30);
+            text-decoration: underline;
+            color: burlywood;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 1px;
+            padding: 75px;
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 65%;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .container .btn {
+            display: block;
+            width: 67%;
+            margin: 4px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="class">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="gym.jpg" alt="">
+            <div>Pranay Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- rigth box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Nagpur now</h1>
+        <form action="noaction.php"></form>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
